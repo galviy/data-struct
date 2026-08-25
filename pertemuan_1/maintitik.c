@@ -12,9 +12,9 @@ int main() {
 	Titik T1;
 	
 	//algoritma
-	//printf("Halo, ini driver modul Titik /n");
-	//makeTitik(&T1,4,5);
-	//printf("/nNilai absis = %d",getAbsis(T1));
+	printf("Halo, ini driver modul Titik /n");
+	makeTitik(&T1,4,5);
+	printf("/nNilai absis = %d",getAbsis(T1));
 	
 	return 0;
 }
