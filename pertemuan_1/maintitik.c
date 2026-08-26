@@ -1,13 +1,14 @@
 /************************************/
 /* Program   : maintitik.c */
 /* Deskripsi : aplikasi driver modul Titik */
-/* NIM/Nama  : */
+/* NIM/Nama  : 
 /* Tanggal   : */
 /***********************************/
 #include <stdio.h>
 #include "titik.h"
 
 int main() {
+	
 	//kamus main
 	Titik T1;
 	
