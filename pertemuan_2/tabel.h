@@ -29,6 +29,8 @@ void createTable(Tabel *T);
 	{mengembalikan banyak elemen pengisi T } */
 int getSize(Tabel T);
 
+int maxSize(Tabel T);
+
 /*************************PREDIKAT*************************/
 /* function isEmptyTable( T: Tabel) -> boolean
 	{mengembalikan True jika T kosong } */
@@ -58,8 +60,8 @@ int countVocal(Tabel T);
 	{I.S.: T terdefinisi, x terdefinisi }
 	{F.S.: isi T.wadah bertambah 1 elemen jika belum penuh}
 	{Proses: mengisi elemen T.wadah dengan nilai x}*/
-void addXTable(Tabel *T, char x);
 
+void addXTable(Tabel *T, char x);
 /* procedure addUniqueXTable (input/output T:Tabel, input x: character)
 	{I.S.: T terdefinisi, x terdefinisi }
 	{F.S.: isi T.wadah bertambah 1 elemen jika x unik dan tabel belum penuh}
