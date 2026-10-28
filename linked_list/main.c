@@ -15,7 +15,12 @@ int main(){
   Senarai.First = NIL;
 
   InsertVLast(&Senarai,'A');
-  PrintList(Senarai);
+  InsertVLast(&Senarai,'B');
+  InsertVLast(&Senarai,'C');
+    PrintList(Senarai);
+
+
+
 
 
   /*

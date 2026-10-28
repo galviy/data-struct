@@ -88,26 +88,28 @@ int NbElm(List1 L){
 	return count;
 
 }
-
 void InsertVLast(List1 *L, infotype V ){
-	//Kamus lokal
-	address p;
-	(*p).info = V;
+  address p;
+  
+  p = Alokasi(V); 
 
-	//Algoritma
+  // Algoritma
+    p = Alokasi(V); 
 
-	if(IsEmptyList(*L)){
-		(*L).First = p;
-	} else {
-		address temp;
-		temp = (*L).First;
-		while(temp != NIL){
-			temp = (*temp).next;
-		}
-		(*temp).next = p;
-
-	}
+  if (p != NIL) { 
+    if (IsEmptyList(*L)){
+      (*L).First = p;
+    } else {
+      address temp;
+      temp = (*L).First;
+      
+      while ((*temp).next != NIL){
+        temp = (*temp).next;
+      }
+      
+      (*temp).next = p;
+    }
+  }
 }
-
 
 
